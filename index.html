@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextStep Engineer - Your Career After B.Tech Starts Here. Personalized guidance for higher studies, jobs, startups, and more.">
+    <title>NextStep Engineer - Career Guidance After B.Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">NextStep</span>
+                <span class="logo-accent">Engineer</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="career-paths.html" class="nav-link">Career Paths</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-btn nav-cta" onclick="openBookingModal()">Book Consultation</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Your Career After</span>
+                <span class="title-line highlight">B.Tech Starts Here</span>
+            </h1>
+            <p class="hero-subtitle">Personalized guidance for every path - Higher Studies, Jobs, Startups, Government Exams, and More</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openBookingModal()">
+                    <span>Get Started</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='career-paths.html'">
+                    <span>Explore Paths</span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Students Guided</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number" data-target="8500">0</div>
+                    <div class="stat-label">Placements</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-target="4.9">0</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Guidance</h3>
+                    <p>Tailored career paths based on your skills, interests, and aspirations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Opportunities</h3>
+                    <p>Access to international universities, companies, and startup ecosystems</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Expert Mentors</h3>
+                    <p>Industry professionals and alumni from top institutions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Comprehensive Resources</h3>
+                    <p>Study materials, exam guides, and career development tools</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>End-to-End Support</h3>
+                    <p>From planning to execution, we're with you every step</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Thousands of successful placements and admissions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Paths Section -->
+    <section class="featured-paths-section">
+        <div class="container">
+            <h2 class="section-title">Featured Career Paths</h2>
+            <div class="paths-slider">
+                <div class="path-card">
+                    <div class="path-icon">🎓</div>
+                    <h3>MS Abroad</h3>
+                    <p>Pursue Masters from top international universities</p>
+                    <a href="career-paths.html#ms-abroad" class="path-link">Learn More →</a>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">💼</div>
+                    <h3>Private Job</h3>
+                    <p>Land your dream job in tech companies</p>
+                    <a href="career-paths.html#private-job" class="path-link">Learn More →</a>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">🏛️</div>
+                    <h3>Government Job</h3>
+                    <p>Secure positions in PSUs and government sectors</p>
+                    <a href="career-paths.html#government-job" class="path-link">Learn More →</a>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">🚀</div>
+                    <h3>Startup Founder</h3>
+                    <p>Build your own tech startup from scratch</p>
+                    <a href="career-paths.html#startup" class="path-link">Learn More →</a>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">📜</div>
+                    <h3>Certifications</h3>
+                    <p>Boost your profile with industry certifications</p>
+                    <a href="career-paths.html#certifications" class="path-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Students Say</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"NextStep Engineer helped me get into Stanford for MS. Their guidance was invaluable throughout the entire process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <div class="author-name">Rajesh Kumar</div>
+                            <div class="author-role">MS Student, Stanford University</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I landed my dream job at Google thanks to their mock interviews and resume review services."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PM</div>
+                        <div class="author-info">
+                            <div class="author-name">Priya Mehta</div>
+                            <div class="author-role">Software Engineer, Google</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Started my own startup with their mentorship. Best decision I ever made!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <div class="author-name">Arjun Sharma</div>
+                            <div class="author-role">Founder, TechVentures</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeTestimonial(-1)">‹</button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentTestimonial(0)"></span>
+                    <span class="dot" onclick="currentTestimonial(1)"></span>
+                    <span class="dot" onclick="currentTestimonial(2)"></span>
+                </div>
+                <button class="carousel-btn next" onclick="changeTestimonial(1)">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Take the Next Step?</h2>
+                <p>Book a free consultation and discover your ideal career path</p>
+                <button class="btn btn-primary" onclick="openBookingModal()">
+                    <span>Book Free Consultation</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">NextStep</span>
+                        <span class="logo-accent">Engineer</span>
+                    </div>
+                    <p>Your trusted partner in shaping your engineering career after B.Tech.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="career-paths.html">Career Paths</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for career tips and updates</p>
+                    <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="def62434-ea73-4496-827b-4ab1e4552ef3">
+                        <input type="hidden" name="subject" value="Newsletter Subscription">
+                        <input type="hidden" name="redirect" value="true">
+                        <input type="hidden" name="redirect_url" value="index.html">
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NextStep Engineer. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Your Consultation</h2>
+            <form class="booking-form" id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="def62434-ea73-4496-827b-4ab1e4552ef3">
+                <input type="hidden" name="subject" value="Consultation Booking Request">
+                <input type="hidden" name="redirect" value="true">
+                <input type="hidden" name="redirect_url" value="index.html">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" name="preferred_date" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <select name="preferred_time" required>
+                        <option value="">Select time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type</label>
+                    <select name="consultation_type" required>
+                        <option value="">Select type</option>
+                        <option value="career-counseling">Career Counseling</option>
+                        <option value="profile-evaluation">Profile Evaluation</option>
+                        <option value="university-selection">University Selection</option>
+                        <option value="resume-review">Resume Review</option>
+                        <option value="mock-interview">Mock Interview</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

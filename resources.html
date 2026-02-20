@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resources - Study guides, exam timelines, scholarship database, and career development tools.">
+    <title>Resources - NextStep Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">NextStep</span>
+                <span class="logo-accent">Engineer</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="career-paths.html" class="nav-link">Career Paths</a></li>
+                <li><a href="resources.html" class="nav-link active">Resources</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-btn nav-cta" onclick="openBookingModal()">Book Consultation</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Resources</h1>
+            <p class="page-subtitle">Comprehensive guides, tools, and materials to accelerate your career journey</p>
+        </div>
+    </section>
+
+    <!-- Resources Tabs -->
+    <section class="resources-section">
+        <div class="container">
+            <div class="resources-tabs">
+                <button class="tab-btn active" onclick="showTab('blog')">Blog</button>
+                <button class="tab-btn" onclick="showTab('guides')">Guides</button>
+                <button class="tab-btn" onclick="showTab('downloads')">Downloads</button>
+                <button class="tab-btn" onclick="showTab('videos')">Videos</button>
+                <button class="tab-btn" onclick="showTab('timelines')">Exam Timelines</button>
+                <button class="tab-btn" onclick="showTab('scholarships')">Scholarships</button>
+            </div>
+
+            <!-- Blog Tab -->
+            <div class="tab-content active" id="blog">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📝</div>
+                        <h3>How to Prepare for GATE 2026</h3>
+                        <p>Complete guide to GATE preparation strategy, study plan, and tips from toppers.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🌍</div>
+                        <h3>MS Abroad: Complete Application Guide</h3>
+                        <p>Step-by-step process for applying to international universities for MS programs.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💼</div>
+                        <h3>Resume Writing Tips for Engineers</h3>
+                        <p>Learn how to create an ATS-friendly resume that gets you interviews.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🎤</div>
+                        <h3>Ace Your Technical Interviews</h3>
+                        <p>Master the art of technical interviews with proven strategies and practice tips.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🚀</div>
+                        <h3>Starting Your Tech Startup</h3>
+                        <p>From idea to launch: A comprehensive guide for engineering entrepreneurs.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💰</div>
+                        <h3>Scholarship Opportunities for Engineers</h3>
+                        <p>Discover scholarships available for engineering students worldwide.</p>
+                        <a href="#" class="resource-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guides Tab -->
+            <div class="tab-content" id="guides">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>GATE Preparation Guide</h3>
+                        <p>Complete study plan, syllabus, and preparation strategy for GATE exam.</p>
+                        <a href="#" class="resource-link">Download Guide →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">✈️</div>
+                        <h3>Visa Application Guide</h3>
+                        <p>Step-by-step visa application process for study and work visas.</p>
+                        <a href="#" class="resource-link">Download Guide →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🎓</div>
+                        <h3>University Selection Guide</h3>
+                        <p>How to choose the right university based on your profile and goals.</p>
+                        <a href="#" class="resource-link">Download Guide →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💻</div>
+                        <h3>Coding Interview Preparation</h3>
+                        <p>Complete guide to DSA, system design, and coding interview preparation.</p>
+                        <a href="#" class="resource-link">Download Guide →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downloads Tab -->
+            <div class="tab-content" id="downloads">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📄</div>
+                        <h3>Resume Templates</h3>
+                        <p>Professional resume templates for engineers (Word & PDF formats).</p>
+                        <a href="#" class="resource-link">Download →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📋</div>
+                        <h3>SOP Templates</h3>
+                        <p>Statement of Purpose templates for MS applications.</p>
+                        <a href="#" class="resource-link">Download →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📊</div>
+                        <h3>Career Comparison Chart</h3>
+                        <p>Compare different career paths side-by-side with this comprehensive chart.</p>
+                        <a href="#" class="resource-link">Download →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📅</div>
+                        <h3>Exam Calendar 2026</h3>
+                        <p>Complete calendar of all engineering exams and application deadlines.</p>
+                        <a href="#" class="resource-link">Download →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videos Tab -->
+            <div class="tab-content" id="videos">
+                <div class="resources-grid">
+                    <div class="resource-card video-card">
+                        <div class="video-thumbnail">▶️</div>
+                        <h3>GATE Preparation Strategy</h3>
+                        <p>Learn effective strategies from GATE toppers.</p>
+                        <span class="video-duration">45 min</span>
+                    </div>
+                    <div class="resource-card video-card">
+                        <div class="video-thumbnail">▶️</div>
+                        <h3>MS Application Process</h3>
+                        <p>Complete walkthrough of MS application process.</p>
+                        <span class="video-duration">30 min</span>
+                    </div>
+                    <div class="resource-card video-card">
+                        <div class="video-thumbnail">▶️</div>
+                        <h3>Technical Interview Tips</h3>
+                        <p>Master technical interviews with expert tips.</p>
+                        <span class="video-duration">25 min</span>
+                    </div>
+                    <div class="resource-card video-card">
+                        <div class="video-thumbnail">▶️</div>
+                        <h3>Startup Success Stories</h3>
+                        <p>Inspiring stories from engineering entrepreneurs.</p>
+                        <span class="video-duration">40 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Timelines Tab -->
+            <div class="tab-content" id="timelines">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan - Mar</div>
+                        <div class="timeline-content">
+                            <h3>GATE Exam</h3>
+                            <p>Graduate Aptitude Test in Engineering</p>
+                            <span class="timeline-status">Registration: Oct-Nov</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Apr - Jun</div>
+                        <div class="timeline-content">
+                            <h3>GRE Exam</h3>
+                            <p>Graduate Record Examination</p>
+                            <span class="timeline-status">Year-round availability</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul - Sep</div>
+                        <div class="timeline-content">
+                            <h3>MS Applications</h3>
+                            <p>Fall intake applications open</p>
+                            <span class="timeline-status">Deadlines: Dec-Feb</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct - Dec</div>
+                        <div class="timeline-content">
+                            <h3>Placement Season</h3>
+                            <p>Campus recruitment drives</p>
+                            <span class="timeline-status">Aug - Dec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scholarships Tab -->
+            <div class="tab-content" id="scholarships">
+                <div class="resources-grid">
+                    <div class="resource-card scholarship-card">
+                        <div class="scholarship-badge">💰</div>
+                        <h3>Fulbright Scholarship</h3>
+                        <p>Full funding for MS/PhD in USA</p>
+                        <div class="scholarship-details">
+                            <span>Amount: Full Tuition</span>
+                            <span>Deadline: Oct 15</span>
+                        </div>
+                        <a href="#" class="resource-link">Apply Now →</a>
+                    </div>
+                    <div class="resource-card scholarship-card">
+                        <div class="scholarship-badge">💰</div>
+                        <h3>Chevening Scholarship</h3>
+                        <p>UK government scholarship for Masters</p>
+                        <div class="scholarship-details">
+                            <span>Amount: Full Funding</span>
+                            <span>Deadline: Nov 1</span>
+                        </div>
+                        <a href="#" class="resource-link">Apply Now →</a>
+                    </div>
+                    <div class="resource-card scholarship-card">
+                        <div class="scholarship-badge">💰</div>
+                        <h3>DAAD Scholarship</h3>
+                        <p>German Academic Exchange Service</p>
+                        <div class="scholarship-details">
+                            <span>Amount: €850/month</span>
+                            <span>Deadline: Varies</span>
+                        </div>
+                        <a href="#" class="resource-link">Apply Now →</a>
+                    </div>
+                    <div class="resource-card scholarship-card">
+                        <div class="scholarship-badge">💰</div>
+                        <h3>Erasmus Mundus</h3>
+                        <p>European Union scholarship program</p>
+                        <div class="scholarship-details">
+                            <span>Amount: Full Funding</span>
+                            <span>Deadline: Jan 15</span>
+                        </div>
+                        <a href="#" class="resource-link">Apply Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">NextStep</span>
+                        <span class="logo-accent">Engineer</span>
+                    </div>
+                    <p>Your trusted partner in shaping your engineering career after B.Tech.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="career-paths.html">Career Paths</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for career tips and updates</p>
+                    <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="def62434-ea73-4496-827b-4ab1e4552ef3">
+                        <input type="hidden" name="subject" value="Newsletter Subscription">
+                        <input type="hidden" name="redirect" value="true">
+                        <input type="hidden" name="redirect_url" value="resources.html">
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NextStep Engineer. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Your Consultation</h2>
+            <form class="booking-form" id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="def62434-ea73-4496-827b-4ab1e4552ef3">
+                <input type="hidden" name="subject" value="Consultation Booking Request">
+                <input type="hidden" name="redirect" value="true">
+                <input type="hidden" name="redirect_url" value="resources.html">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" name="preferred_date" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <select name="preferred_time" required>
+                        <option value="">Select time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type</label>
+                    <select name="consultation_type" required>
+                        <option value="">Select type</option>
+                        <option value="career-counseling">Career Counseling</option>
+                        <option value="profile-evaluation">Profile Evaluation</option>
+                        <option value="university-selection">University Selection</option>
+                        <option value="resume-review">Resume Review</option>
+                        <option value="mock-interview">Mock Interview</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="resources.js"></script>
+</body>
+</html>
